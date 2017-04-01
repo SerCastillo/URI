@@ -1,0 +1,33 @@
+//URI 1176 Fibonacci Array
+/*Escribir un programa que lea un número e imprimir el número de Fibonacci correspondiente a este número de lectura. 
+Recuerde que los primeros elementos de la serie de Fibonacci son 0 y 1 y cada término siguiente es la suma de los dos precede. 
+Todos los números de Fibonacci calculados en este programa deben encajar en un número de 64 bits sin signo.
+Entrada
+La primera línea de la entrada contiene un único entero T , lo que indica el número de casos de prueba. Cada caso de prueba contiene
+ un solo número entero N (0 = N = 60), que corresponde a la N-ésimo término de la serie de Fibonacci.
+Salida
+Para cada caso de prueba en la entrada, imprimir el mensaje "Fib (N) = X", donde X es el N-ésimo término de la serie de Fibonacci.
+ */
+package Programas;
+
+import java.util.Scanner;
+
+public class URI1001 {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int i, a = 1, b = 0, c = 0, n;
+
+        n = entrada.nextInt();
+
+        System.out.println(n);
+        for (i = 0; i < n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        System.out.println("Fib (" + i + ")= " + c);
+
+    }
+
+}
