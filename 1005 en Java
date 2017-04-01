@@ -1,0 +1,31 @@
+//URI 1005
+/*Leer los valores de precisión doble A y B dos puntos flotantes ", que corresponden a dos grados de los estudiantes. 
+Después de esto, se calcula el promedio del estudiante, teniendo en cuenta que el grado A tiene un peso de 3,5 y B tiene un 
+peso de 7,5. Cada grado puede ser de cero a diez, siempre con un dígito después del punto decimal. No se olvide de imprimir 
+el final de la línea después del resultado, de lo contrario recibirá “Presentación de error” . No se olvide del espacio antes y después del signo igual.
+Entrada
+El archivo de entrada contiene valores de 2 puntos flotantes con un dígito después del punto decimal.
+Salida
+Imprimir MEDIA (promedio en portugués) de acuerdo con el siguiente ejemplo, con 5 dígitos después del punto decimal y con un espacio en blanco antes y después de la señal igual.
+*/
+package Programas;
+
+import java.util.Scanner;
+
+public class URI1001 {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+    float A,B,MEDIA;
+    A=entrada.nextFloat();
+    B=entrada.nextFloat();
+    A=  (float) (B*3.5);
+    B=  (float) (B*3.5);
+    MEDIA= A+B/11;
+        System.out.println(MEDIA);
+ 
+
+    }
+
+}
