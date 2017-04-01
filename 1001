@@ -1,0 +1,22 @@
+/*Leer 2 valores enteros y almacenarlos en variables, denominado A y B y que la suma de estas dos variables, asignando su resultado a la variable X . 
+Imprimir X como se muestra a continuación. No presenta ningún mensaje más allá de lo que se está especificado y no se olvide de imprimir el final de la 
+línea después del resultado, de lo contrario recibirá " Presentación de error ".
+Entrada
+El archivo de entrada contiene 2 valores enteros.
+Salida
+Imprimir la variable X de acuerdo con el siguiente ejemplo, con un espacio en blanco antes y después de la señal igual. 'X' es mayúscula y hay que imprimir un espacio en blanco antes y después de la señal de los '='.
+*/
+
+
+#include<stdio.h>
+int main(){
+  int A,B,suma=0;
+  scanf("%i ",&A);
+  scanf("%i",&B);
+  suma=A+B;
+  printf("X = %i",suma);
+
+	
+  return 0;
+	
+}
