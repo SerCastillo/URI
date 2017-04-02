@@ -1,0 +1,19 @@
+package Programas;
+
+import java.util.Scanner;
+
+public class URI1173 {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int i, n, num;
+        n = entrada.nextInt();
+        for (i = 0; i < 10; i++) {
+            System.out.println("N[" + i + "] = " + n);
+            n *= 2;
+        }
+
+    }
+
+}
