@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+	float n=1 ;
+	int i;
+	scanf("%f", &n);
+	for(i=0; i<100; i++){
+	
+		printf("N[%d] = %f\n", i, n);
+		n=n/2;
+	}
+	return 0;
+}
