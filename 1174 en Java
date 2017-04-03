@@ -1,0 +1,21 @@
+package Programas;
+
+import java.util.Scanner;
+
+public class URI1174 {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        float n;
+        int i, A;
+        for (i = 0; i < 100; i++) {
+            n = entrada.nextInt();
+            if (n <= 10) {
+                System.out.println("A[" + i + "] = " + n);
+            }
+
+        }
+    }
+
+}
