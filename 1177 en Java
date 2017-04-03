@@ -1,0 +1,22 @@
+package Programas;
+
+import java.util.Scanner;
+
+public class URI1175 {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int n, i, j = 0;
+        n = entrada.nextInt();
+        for (i = 0; i < 1000; i++) {
+            if (j >= n) {
+                j = 0;
+            }
+
+            System.out.println("N[" + i + "] = " + j++);
+        }
+
+    }
+
+}
